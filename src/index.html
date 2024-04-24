@@ -4,39 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      rel="shortcut icon"
+      href="./assets/images/image-avatar.webp"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Frontend Mentor | Blog preview card</title>
+    <title>Blog preview card</title>
   </head>
-  <body>
-    <article class="">
-      <img src="./assets/images/illustration-article.svg" alt="" />
-      <small>Learning</small>
-      <div>Published 21 Dec 2023</div>
-      <h1>
-        <a href="./"> HTML &amp; CSS foundations </a>
-      </h1>
-      <p>
-        These languages are the backbone of every website, defining structure,
-        content, and presentation.
-      </p>
-      <div>
+  <body class="grid place-items-center min-h-dvh bg-primary">
+    <main>
+      <article
+        class="w-[clamp(326px,_87%,_383px)] mx-auto p-6 bg-slate-100 rounded-2xl border border-black grid gap-y-6 shadow-black shadow-solid"
+      >
         <img
-          src="./assets/images/image-avatar.webp"
-          alt="Photo of Author, Greg Hooper"
+          class="w-[clamp(278px,_100%,_333px)] rounded-xl"
+          src="./assets/images/illustration-article.svg"
+          alt="Graphic cover of this post, HTML and CSS foundations"
         />
-        <p>Greg Hooper</p>
-      </div>
-    </article>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+        <div class="grid gap-y-6">
+          <div>
+            <small
+              class="font-extrabold font-display bg-primary py-2 px-3 text-black rounded-md mb-4 inline-block"
+              >Learning</small
+            >
+            <br />
+            <small class="font-display text-black font-medium"
+              >Published <time datetime="2023-12-21">21 Dec 2023</time></small
+            >
+          </div>
+          <h1 class="font-display text-black">
+            <a class="hover:text-primary focus-within:text-primary" href="#b">
+              <strong>HTML &amp; CSS foundations </strong>
+            </a>
+          </h1>
+          <p class="text-sm font-display text-grey font-medium leading-normal">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="flex items-center gap-x-3">
+          <img
+            class="size-8"
+            src="./assets/images/image-avatar.webp"
+            alt="Photo of Author, Greg Hooper"
+          />
+          <p class="text-sm font-display text-black">
+            <strong> Greg Hooper</strong>
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer class="attribution absolute bottom-4 font-display font-medium">
+      <a
+        class="group"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+      >
+        Challenge by
+        <span class="hover:text-white group-focus-within:text-white">
+          Frontend Mentor
+        </span> </a
+      >.
+      <a href="#" class="group"
+        >Coded by
+        <span class="hover:text-white group-focus-within:text-white">
+          RealKendpr
+        </span> </a
+      >.
+    </footer>
   </body>
 </html>

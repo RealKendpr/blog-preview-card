@@ -7,7 +7,22 @@
     font-size: 11px;
     text-align: center;
   }
-  .attribution a {
+  .attribution span {
     color: hsl(228, 45%, 44%);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: "Figrtree";
+    src: url(./assets/fonts/Figtree-SemiBold.woff2) format("woff2"),
+      url(./assets/fonts/Figtree-SemiBold.woff) format("woff");
+    display: optional;
+  }
+  @font-face {
+    font-family: "Figrtree";
+    src: url(./assets/fonts/Figtree-ExtraBold.woff2) format("woff2"),
+      url(./assets/fonts/Figtree-ExtraBold.woff) format("woff");
+    display: optional;
   }
 }
